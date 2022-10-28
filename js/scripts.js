@@ -1,13 +1,12 @@
 // Business Logic
 
 function roboTranslateNums(num){
-  console.log(num);
   // Initialize numsArray
   const numsArray = [];
-  
+  // Cast argument to type number
+  num = parseInt(num);
   // Validate that user input is a number
-  if (Number.isInteger(num)) {
-    console.log(Number.isInteger(num));
+  if (!Number.isInteger(num)) {
     return 0;
   } else {
     // Create array from 0 to user input
