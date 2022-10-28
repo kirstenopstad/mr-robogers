@@ -43,4 +43,21 @@ h1 {
   background-repeat: no-repeat;
   background-size: 100%;
   transform: rotate(-20deg);
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#speech-bubble::-webkit-scrollbar {
+  display: none;
+}
+
+#speech-bubble p {
+  background-color: white;
+  font-family: Mackinac Pro Extra Bld;
+  text-align: center;
+  text-shadow: 5px;  
+}
+
+

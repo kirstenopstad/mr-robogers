@@ -74,8 +74,10 @@ function handleFormSubmission() {
       };
     };
   }
-  // Add paragraph to DOM
-  document.body.append(p);
+  // Add paragraph to speech bubble, unhide div
+  const speechBub = document.getElementById("speech-bubble")
+  speechBub.removeAttribute("class");
+  speechBub.append(p);
 }
 
 window.addEventListener("load", function(){
