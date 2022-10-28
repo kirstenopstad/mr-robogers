@@ -56,15 +56,47 @@ Mr. Roboger's Neighborhood will:
 * Navigate to the top level of the directory.
 * Open index.html in your browser.
 
-<!-- KO Ask Yourself:
+## Tests
+```
+Describe: roboTranslateNums()
 
-[x] Do I need to run a server? 
+Test: "It should return 0 if the user input is not a number"
+Code: roboTranslateNums(!);
+Expected Output: 0
 
-[x] How should I set up my databases? 
+Test: "It should return an array of numbers from 0 to the user's inputted number"
+Code: roboTranslateNums(5);
+Expected Output: [0, 1, 2, 3, 4, 5]
 
-[x] Is there other code this application depends on?
+Test: "It should replace any elements that include a 1 with 'Beep!'"
+Code: roboTranslateNums(5);
+Expected Output: [0, "Beep!", 2, 3, 4, 5]
 
-_{Epicodus recommends deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_ -->
+Test: "It should replace any elements that include a 2 with 'Boop!'"
+Code: roboTranslateNums(5);
+Expected Output: [0, "Beep!", "Boop!", 3, 4, 5]
+
+Test: "It should replace any elements that include a 3 with 'Won't you be my neighbor?'"
+Code: roboTranslateNums(5);
+Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5]
+
+Test: "It should replace any elements of any length that include a 1, 2, or 3 with "Beep!", "Boop!", or "Won't you be my neighbor?"
+Code: roboTranslateNums(14);
+Expected Output: [0, "Beep", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!"]
+
+Test: "It should replace any elements that contain both a 1 and a 2 with "Boop!"
+Code: roboTranslateNums(12);
+Expected Output: [0, "Beep", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!"]
+
+Test: "It should replace any elements that contain both 1 and 3 with 'Won't you be my neighbor?'."
+Code: roboTranslateNums(13);
+Expected Output: [0, "Beep", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?"]
+
+Test: "It should replace any elements that contain both a 2 and 3 with "Won't you be my neighbor?"
+Code: roboTranslateNums(23);
+Expected Output: [0, "Beep", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!", "Beep", "Beep", "Beep", "Beep", "Beep", "Beep", "Boop!", "Boop!", "Won't you be my neighbor?"]
+
+```
 
 ## Known Bugs
 
