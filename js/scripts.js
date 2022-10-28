@@ -1,11 +1,13 @@
 // Business Logic
 
 function roboTranslateNums(num){
+  console.log(num);
   // Initialize numsArray
   const numsArray = [];
   
   // Validate that user input is a number
-  if (!Number.isInteger(num)) {
+  if (Number.isInteger(num)) {
+    console.log(Number.isInteger(num));
     return 0;
   } else {
     // Create array from 0 to user input
@@ -30,25 +32,28 @@ function roboTranslateNums(num){
       return parseInt(num);
     }
   });
-  
+  console.log(translatedArray);
   return translatedArray;
 }
 
 // UI Logic
 function handleFormSubmission() {
   // Retrieve user input
-  const userInput = document.getElementById("userInput1");
+  const userInput = document.getElementById("userInput1").value;
+  console.log(userInput);
   // Pass number to business logic, store return in variable
   const translation = roboTranslateNums(userInput);
+  console.log(translation);
+  console.log(roboTranslateNums(userInput));
   // If function returns 0, print error
   let p = 0;
   if (translation === 0) {
     // Create new paragraph element with id 'error'
-    p = document.createElement("p#error");
+    p = document.createElement("p");
     p.append("Error! Please input a number.")
   } else {
     // Else create new paragraph element with class 'results'
-    p = document.createElement("p.results");
+    p = document.createElement("p");
     p.append(translation);
   }
   // Add paragraph to DOM
@@ -57,7 +62,7 @@ function handleFormSubmission() {
 
 window.addEventListener("load", function(){
   document.body.addEventListener("submit", function() {
-    event.preventDefault;
+    event.preventDefault();
     handleFormSubmission();
   });
 })
