@@ -54,10 +54,9 @@ h1 {
 }
 
 #speech-bubble p {
-  background-color: white;
   font-family: Mackinac Pro Extra Bld;
   text-align: center;
-  text-shadow: 5px;  
+  margin-top: -5px;
 }
 
 
