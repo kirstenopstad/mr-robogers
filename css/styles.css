@@ -3,7 +3,23 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+h1 {
+  text-align: right;
+}
+
 @font-face {
   font-family: Mackinac Pro Extra Bld;
   src: url(../fonts/MackinacProExtraBld.ttf);
+}
+
+#mr-rogers-illustration {
+  width: 456px;
+  height: 515px;
+  background-image: url(../img/mister-rogers-sweater-illustration.png);
+  background-repeat: no-repeat;
+  background-size: 456px;
+  background-clip: content-box;
+  background-position-y: ;
+  background-position-x: 50%;
+  margin: auto;
 }
