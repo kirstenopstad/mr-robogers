@@ -11,6 +11,10 @@ h1 {
   font-family: Mackinac Pro Extra Bld;
   src: url(../fonts/MackinacProExtraBld.ttf);
 }
+#blurb {
+  margin-top: 120px;
+  width: 50%;
+}
 
 #mr-rogers-illustration {
   width: 456px;
