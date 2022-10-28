@@ -53,7 +53,26 @@ function handleFormSubmission() {
   } else {
     // Else create new paragraph element with class 'results'
     p = document.createElement("p");
-    p.append(translation);
+    // For every element in array
+    for (i = 0; i <= translation.length - 1; i++) {
+      if (i != translation.length - 1) {
+        // If element is number
+        if (Number.isInteger(translation[i])) {
+          p.append(translation[i] + ", ");
+        // Else, wrap in quotation marks
+        } else {
+          p.append("'" + translation[i] + "', ");
+        }
+      } else {
+        // If element is number
+        if (Number.isInteger(translation[i])) {
+          p.append(translation[i]);
+        // Else, wrap in quotation marks
+        } else {
+          p.append("'" + translation[i] + "'");
+        };
+      };
+    };
   }
   // Add paragraph to DOM
   document.body.append(p);
