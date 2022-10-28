@@ -11,14 +11,24 @@ h1 {
   font-family: Mackinac Pro Extra Bld;
   src: url(../fonts/MackinacProExtraBld.ttf);
 }
+.container-fluid {
+  display: flex;
+  align-items: center;
+  height: 90vh;
+}
 
 .hidden {
   visibility: hidden;
 }
 
 #blurb {
-  margin-top: 0px;
+  margin-top: 40px;
   width: 50%;
+  padding-right: 25px;
+}
+
+#blurb p {
+  margin-top: -75px;
 }
 
 #mr-rogers-illustration {
@@ -27,14 +37,11 @@ h1 {
   background-image: url(../img/mister-rogers-sweater-illustration.png);
   background-repeat: no-repeat;
   background-size: 456px;
-  background-clip: content-box;
-  background-position-y: ;
-  background-position-x: 50%;
   margin: auto;
 }
 
 #speech-bubble {
-  margin-top: -100px;
+  margin-top: -70px;
   padding: 40px;
   padding-bottom: 85px;
   width: 250px;

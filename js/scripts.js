@@ -31,7 +31,6 @@ function roboTranslateNums(num){
       return parseInt(num);
     }
   });
-  console.log(translatedArray);
   return translatedArray;
 }
 
@@ -48,11 +47,9 @@ function handleFormSubmission() {
   reset();
   // Retrieve user input
   const userInput = document.getElementById("userInput1").value;
-  console.log(userInput);
+
   // Pass number to business logic, store return in variable
   const translation = roboTranslateNums(userInput);
-  console.log(translation);
-  console.log(roboTranslateNums(userInput));
   // If function returns 0, print error
   let p = 0;
   if (translation === 0) {
