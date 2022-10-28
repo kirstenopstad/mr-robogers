@@ -1,0 +1,9 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: Mackinac Pro Extra Bld;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Mackinac Pro Extra Bld;
+  src: url(../fonts/MackinacProExtraBld.ttf);
+}
