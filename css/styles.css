@@ -11,8 +11,13 @@ h1 {
   font-family: Mackinac Pro Extra Bld;
   src: url(../fonts/MackinacProExtraBld.ttf);
 }
+
+.hidden {
+  visibility: hidden;
+}
+
 #blurb {
-  margin-top: 120px;
+  margin-top: 0px;
   width: 50%;
 }
 
@@ -26,4 +31,16 @@ h1 {
   background-position-y: ;
   background-position-x: 50%;
   margin: auto;
+}
+
+#speech-bubble {
+  margin-top: -100px;
+  padding: 40px;
+  padding-bottom: 85px;
+  width: 250px;
+  height: 225px;
+  background-image: url(../img/speech-bubble.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transform: rotate(-20deg);
 }
