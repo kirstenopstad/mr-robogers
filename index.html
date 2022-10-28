@@ -17,12 +17,14 @@
       </div>
 
       <!-- TODO: Create special #word-bubble div for results to display in -->
-      <form class="form">
+      <form class="form row g-2">
         <!-- TODO: Style form to act like chat box [i.e. submit becomes send button, etc.] -->
-        <label for="userInput1">Enter a Number</label>
-        <input id="userInput1" name="userInput1" type="number">
-        <br>
-        <button class="btn btn-primary" type="submit">Submit</button>
+        <div class="col-auto">
+          <input class="form-control" id="userInput1" name="userInput1" placeholder="Enter a Number" type="number">
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-primary mb-3" type="submit">Talk to Mr. Robogers</button>
+        </div>
       </form>
     </div>
   </body>
