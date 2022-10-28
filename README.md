@@ -80,10 +80,6 @@ Test: "It should replace any elements that include a 3 with 'Won't you be my nei
 Code: roboTranslateNums(5);
 Expected Output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5]
 
-Test: "It should replace any elements of any length that include a 1, 2, or 3 with "Beep!", "Boop!", or "Won't you be my neighbor?"
-Code: roboTranslateNums(14);
-Expected Output: [0, "Beep", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?", "Beep!"]
-
 Test: "It should replace any elements that contain both a 1 and a 2 with "Boop!"
 Code: roboTranslateNums(12);
 Expected Output: [0, "Beep", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Boop!"]
