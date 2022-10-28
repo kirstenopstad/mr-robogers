@@ -16,7 +16,7 @@ function roboTranslateNums(num){
     // Cast to string and check for 1
     num = num.toString();
     // Replace any elements that include a 1 with "Beep!"
-    if (num.includes("1")) {
+    if (num.includes("1") && !num.includes("2") && !num.includes("3")) {
       return num = "Beep!";
     // Replace any elements that include a 2 with "Boop!"
     } else if (num.includes("2")){
