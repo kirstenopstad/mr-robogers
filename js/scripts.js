@@ -36,7 +36,16 @@ function roboTranslateNums(num){
 }
 
 // UI Logic
+function reset() {
+  const speechBub = document.getElementById("speech-bubble");
+  const contents = speechBub.querySelector("p");
+  if (contents) {
+    contents.remove();
+  };
+};
+
 function handleFormSubmission() {
+  reset();
   // Retrieve user input
   const userInput = document.getElementById("userInput1").value;
   console.log(userInput);
@@ -85,4 +94,7 @@ window.addEventListener("load", function(){
     event.preventDefault();
     handleFormSubmission();
   });
+  // document.body.addEventListener("submit", function() {
+  //   reset();
+  // });
 })
