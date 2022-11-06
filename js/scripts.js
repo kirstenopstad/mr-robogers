@@ -10,7 +10,7 @@ function roboTranslateNums(num){
     return 0;
   } else {
     // Create array from 0 to user input
-    for (i = 0; i <= num; i++) {
+    for (let i = 0; i <= num; i++) {
       numsArray.push(i);
     };
   };
@@ -60,7 +60,7 @@ function handleFormSubmission() {
     // Else create new paragraph element with class 'results'
     p = document.createElement("p");
     // For every element in array
-    for (i = 0; i <= translation.length - 1; i++) {
+    for (let i = 0; i <= translation.length - 1; i++) {
       if (i != translation.length - 1) {
         // If element is number
         if (Number.isInteger(translation[i])) {
